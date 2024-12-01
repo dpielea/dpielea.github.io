@@ -63,7 +63,12 @@ p{ font-family: inter;
 .certificatesColImg{
     padding: 16%;
 }
-
+@media (min-width: 992px){
+    .meDiv{
+        max-width: 60%;
+    }
+  }
+  
 
 
 
