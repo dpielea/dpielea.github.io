@@ -1,0 +1,69 @@
+
+section{
+    margin-bottom:5%;
+    margin-top:5%;
+ }
+
+
+h1{
+    font-family: inter;
+    font-style: Bold;
+}
+h2{
+    font-family: inter;
+
+}
+h3{
+    font-family: inter;
+    font-style: semi-bold;
+    padding-bottom: 2%;
+}
+h4{
+    font-family: inter;
+    font-style: medium;
+
+}
+p{ font-family: inter;
+    font-style: regular;
+    color: #828282;
+}
+
+/* me */
+
+.meColIcon{
+    max-width: 24px;
+    margin-bottom: 2%;
+}
+
+/* skills */
+
+.skillsContainerDiv{
+    margin: auto;
+    padding-left:5% ;
+    padding-right: 5%;
+}
+
+/* experiences */
+
+.experiencesColImg{
+    max-height: 85%;
+}
+
+/* certif */
+
+.certificatesContainerDiv{
+    margin: auto;
+}
+
+.certificatesColDiv{
+    max-width: 70%;
+    margin: auto;
+}
+
+.certificatesColImg{
+    padding: 16%;
+}
+
+
+
+
