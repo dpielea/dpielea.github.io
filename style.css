@@ -46,7 +46,13 @@ p{ font-family: inter;
 /* experiences */
 
 .experiencesColImg{
-    max-height: 85%;
+    margin:auto;
+}
+.experiencesColDiv{
+    margin:auto;
+}
+button{
+    color: #FFF;
 }
 
 /* certif */
@@ -56,18 +62,31 @@ p{ font-family: inter;
 }
 
 .certificatesColDiv{
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
 }
 
-.certificatesColImg{
-    padding: 16%;
-}
+@media (max-width: 768px){
+    .certificatesColDiv{
+        max-width: 90%;
+        margin: auto;
+    }
+  }
+
+
 @media (min-width: 992px){
     .meDiv{
         max-width: 60%;
     }
   }
+
+ /* technologies */
+
+.technologiesDivDiv{
+margin: auto;
+padding: 10%;
+height: fit-content;
+}
   
 
 
