@@ -1,6 +1,6 @@
 import * as THREE from 
             'https://cdn.jsdelivr.net/npm/three@v0.171.0/build/three.module.js';
-          
+
 
 const waitForElementAndInitialize = () => {
     const targetElement = document.getElementById("3D");
@@ -33,19 +33,17 @@ const initializeScene = (targetElement) => {
     earthGroup.rotation.z = -23 * Math.PI /180;
     scene.add(earthGroup)
 
-    const sphere = new THREE.Mesh( new THREE.IcosahedronGeometry(1,12 ), new THREE.MeshBasicMaterial( { 
-        map : new THREE.TextureLoader().load('images/2k_earth_daymap.jpg')} ) ); 
+    const sphere = new THREE.Mesh( new THREE.IcosahedronGeometry(1,12 ), new THREE.MeshLambertMaterial( { 
+        map : new THREE.TextureLoader().load('images/worldmap.jpg')} ) ); 
     earthGroup.add( sphere );
 
-    /*
+    const directionalLight = new THREE.DirectionalLight( 0xffffff, 2 );
     
-    const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
-    scene.add( directionalLight );
-    
-    var ambientLight = new THREE.AmbientLight(0xbbbbbb,0.3)
-    scene.add(ambientLight)
-    scene.fog = new THREE.Fog(0x53ef3,400,2000)
+    directionalLight.position.set(-0.3,0.3,0.1)
+    scene.add(directionalLight);
+   
 
+    /*
     const atmo = new THREE.Mesh( new THREE.SphereGeometry( 5, 50, 50 ), new THREE.MeshBasicMaterial({
         blending: THREE.AdditiveBlending,
         side: THREE.BackSide,
