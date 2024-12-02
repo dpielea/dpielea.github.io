@@ -39,7 +39,7 @@ import * as THREE from
                     renderer.render(scene, camera);
                 }
                 animate();
-            }, 1000);
+            }, 2000);
 
         
         
