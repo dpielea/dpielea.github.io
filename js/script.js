@@ -42,7 +42,7 @@ import * as THREE from
        */ 
 
 const waitForElementAndInitialize = () => {
-    const targetElement = document.querySelector("body > section:nth-child(6) > div > div.col-lg-6.d-flex.justify-content-center");
+    const targetElement = document.querySelector("#3D");
 
     if (targetElement) {
         // Element is found, initialize the scene
