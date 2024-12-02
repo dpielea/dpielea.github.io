@@ -3,7 +3,7 @@ import * as THREE from
           
          /*  
             setTimeout(() => {
-                const targetElement = document.querySelector("body > section:nth-child(6) > div > div.col-lg-6.d-flex.justify-content-center");
+                const targetElement = document.querySelector("#3D");
             
                 if (!targetElement) {
                     console.error("Target element not found after delay.");
