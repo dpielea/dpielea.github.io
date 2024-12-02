@@ -42,7 +42,7 @@ import * as THREE from
        */ 
 
 const waitForElementAndInitialize = () => {
-    const targetElement = document.querySelector("#3D");
+    const targetElement = document.getElementById("3D");
 
     if (targetElement) {
         // Element is found, initialize the scene
