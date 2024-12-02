@@ -66,18 +66,13 @@ button{
     margin: auto;
 }
 
-.technologiesDivDiv{
-margin: auto;
-padding: 10%;
-height: fit-content;
-}
-  
 @media (max-width: 768px){
     .certificatesColDiv{
         max-width: 90%;
         margin: auto;
     }
   }
+
 
 @media (min-width: 992px){
     .meDiv{
@@ -86,6 +81,13 @@ height: fit-content;
   }
 
  /* technologies */
+
+.technologiesDivDiv{
+margin: auto;
+padding: 10%;
+height: fit-content;
+}
+  
 
 
 
