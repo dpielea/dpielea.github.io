@@ -66,6 +66,15 @@ button{
     margin: auto;
 }
 
+<<<<<<< HEAD
+=======
+.technologiesDivDiv{
+margin: auto;
+padding: 10%;
+height: fit-content;
+}
+  
+>>>>>>> ec4c81622cb3b156b5cdb713928c3c7bd091802c
 @media (max-width: 768px){
     .certificatesColDiv{
         max-width: 90%;
@@ -82,12 +91,16 @@ button{
 
  /* technologies */
 
+<<<<<<< HEAD
 .technologiesDivDiv{
 margin: auto;
 padding: 10%;
 height: fit-content;
 }
   
+=======
+
+>>>>>>> ec4c81622cb3b156b5cdb713928c3c7bd091802c
 
 
 
