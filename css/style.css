@@ -31,7 +31,7 @@ p{ font-family: inter;
 /* me */
 
 .meColIcon{
-    max-width: 24px;
+    max-width: 4%;
     margin-bottom: 2%;
 }
 
@@ -44,9 +44,18 @@ p{ font-family: inter;
 }
 
 /* experiences */
-
+.experiencesGridDiv{
+    max-width: 10%;
+    padding: 1%;
+}
 .experiencesColImg{
-    max-height: 85%;
+    margin:auto;
+}
+.experiencesColDiv{
+    margin:auto;
+}
+button{
+    color: #FFF;
 }
 
 /* certif */
@@ -56,14 +65,37 @@ p{ font-family: inter;
 }
 
 .certificatesColDiv{
-    max-width: 70%;
+    max-height: 100%;
     margin: auto;
 }
 
-.certificatesColImg{
-    padding: 16%;
+@media (max-width: 768px){
+    .certificatesColDiv{
+        max-width: 100%;
+        margin: auto;
+    }
+  }
+
+.certificatesColDivImg{
+    max-height: 90%;
+    width: auto;
 }
 
+
+@media (min-width: 992px){
+    .meDiv{
+        max-width: 60%;
+    }
+  }
+
+ /* technologies */
+
+.technologiesDivDiv{
+margin: auto;
+width: auto;
+max-height: 60%;
+}
+  
 
 
 
