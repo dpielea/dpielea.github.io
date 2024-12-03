@@ -68,7 +68,7 @@ button{
 
 @media (max-width: 768px){
     .certificatesColDiv{
-        max-width: 90%;
+        max-width: 100%;
         margin: auto;
     }
   }
@@ -88,5 +88,6 @@ padding: 10%;
 height: fit-content;
 }
   
+
 
 
