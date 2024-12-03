@@ -4,6 +4,7 @@ import * as THREE from
 
 const waitForElementAndInitialize = () => {
     const targetElement = document.getElementById("3D");
+    const sexyLady = document.getElementById("sexyContainer");
 
     if (targetElement) {
         // Element is found, initialize the scene
@@ -16,7 +17,7 @@ const waitForElementAndInitialize = () => {
 };
 
 const initializeScene = (targetElement) => {
-    // Create scene, camera, and renderer
+    /* // Create scene, camera, and renderer
     const scene = new THREE.Scene();
     const parentWidth = targetElement.clientWidth; // Get parent's width
     const parentHeight = targetElement.clientHeight; // Get parent's height
@@ -26,7 +27,22 @@ const initializeScene = (targetElement) => {
     // Set renderer size to match parent dimensions
     renderer.setSize(parentWidth, parentHeight);
     renderer.setPixelRatio(devicePixelRatio)
-    targetElement.appendChild(renderer.domElement); // Attach renderer to the parent element
+    targetElement.appendChild(renderer.domElement); // Attach renderer to the parent element */
+
+
+    const computedStyles = window.getComputedStyle(sexyContainer);
+    const parentWidth = parseFloat(computedStyles.width) || sexyContainer.clientWidth; // Use computed style width
+    const parentHeight = parseFloat(computedStyles.height) || sexyContainer.clientHeight; // Use computed style height
+
+    // Create scene, camera, and renderer
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, parentWidth / parentHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // Alpha to support transparency
+
+    // Set renderer size and attach to the target element
+    renderer.setSize(parentWidth, parentHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    targetElement.appendChild(renderer.domElement);
 
     // Create a box geometry
     const earthGroup = new THREE.Group();
@@ -42,20 +58,10 @@ const initializeScene = (targetElement) => {
     directionalLight.position.set(-0.3,0.3,0.1)
     scene.add(directionalLight);
    
-
-    /*
-    const atmo = new THREE.Mesh( new THREE.SphereGeometry( 5, 50, 50 ), new THREE.MeshBasicMaterial({
-        blending: THREE.AdditiveBlending,
-        side: THREE.BackSide,
-        color:0xFFFFFF,
-    }) ); 
-    atmo.scale.set(1.1,1.1,1.1)
-    scene.add( atmo );*/
-    
-    
-
     // Set camera position
-    camera.position.z = 2;
+    camera.position.z = 2.4;
+    camera.position.x = -0.5;
+    camera.position.y = 0.2;
 
     // Animation loop
     function animate() {
