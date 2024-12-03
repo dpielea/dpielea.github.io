@@ -84,8 +84,8 @@ button{
 
 .technologiesDivDiv{
 margin: auto;
-padding: 10%;
-height: fit-content;
+width: auto;
+max-height: 60%;
 }
   
 
