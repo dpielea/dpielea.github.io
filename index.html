@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="module" src="js/script.js"></script>
+    <script type="module" defer src="js/script.js"></script>
     <meta charset="UTF-16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dimitri PIELEA - Portfolio</title>
@@ -18,16 +18,16 @@
     </header>
     <!-- ME --> 
     <section class="container">
-        <div class="meDiv d-flex flex-column">
-            <h1 class="display-3 strong">Dimitri Pielea's Portfolio</h1>
-            <h2 class="display-6">Data Analytics & Digital Marketing</h2>
-            <p class="gap-5">With two years' experience in Web Data Analysis, graduate of a PGE master's degree in Data Analytics. International experience in Montreal, fluent in English, TOEFL level C1. Has experience in SQL with BigQuerry, trained on several Data Vizualization software: PowerBi, Tableau and Looker Studio. Comfortable with python and the pandas and matplotlib libraries.</p>
+        <div class="meDiv d-flex flex-column ">
+            <h1 class="strong">Dimitri Pielea's Portfolio</h1>
+            <h2 class="hiddenY display-6">Data Analytics & Digital Marketing</h2>
+            <p class="hiddenY gap-5">With two years' experience in Web Data Analysis, graduate of a PGE master's degree in Data Analytics. International experience in Montreal, fluent in English, TOEFL level C1. Has experience in SQL with BigQuerry, trained on several Data Vizualization software: PowerBi, Tableau and Looker Studio. Comfortable with python and the pandas and matplotlib libraries.</p>
         </div>
     </section>
     <!-- My Skills --> 
     <section  class="container">
         <div class="skillsContainerDiv align-content-end row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 hiddenZ">
                 <div>
                     <div><img class="meColIcon" src="images/analyse-des-donnees.png"></div>
                     <div><h5>Data Analysis</h5></div>
@@ -39,7 +39,7 @@
                     <div><p>I make analyis to help you make data driven decisions</p></div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 hiddenZ">
                 <div>
                     <div><img class="meColIcon" src="images/la-creativite.png"></div>
                     <div><h5>Graphic Design</h5></div>
@@ -54,100 +54,73 @@
         </div>
     </section>
     <!-- My Experiences --> 
-    <section id="sexyContainer" class="container">
-        <div class="row">
-            <div id="3D" class="position-absolute col-12">
-            </div>
-            <div class="col-12 d-flex flex-column position-relative">
-                <div class="d-flex flex-column"><h3 class="display-6">My Experiences</h3></div>
-                
+    <section id="sexyContainer" class="row">
+        <div id="3D" class="position-absolute col-12"></div>
+        <div class="container">
+            <div class="col-8 d-flex flex-column position-relative">
+                <div class="d-flex flex-column">
+                    <h3 class="text-white display-6 hiddenY">My Experiences</h3>
+                </div>
                 <div class="grid d-flex gap-1 align-content-around flex-column">
-                    <div class="d-flex flex-column p-2">
+                    <div class="text-white d-flex flex-column p-2 hiddenY">
                         <h5>Working Holiday Visa</h5>
                         <p>For 2O24, I will be working in Australia</p>
                     </div>
-                    <div class="d-flex flex-column p-2">
+                    <div class="text-white d-flex flex-column p-2 hiddenY">
                         <h5>Pari Mutuel Urbain</h5>
                         <p>During 2022 and 2023, I worked as a Digital Analyst in Paris</p>
                     </div>
-                    <div class="d-flex flex-column p-2">
+                    <div class="text-white d-flex flex-column p-2 hiddenY">
                         <h5>EMLV Master</h5>
                         <p>During 2022 and 2023, I followed an ACCSB programm in Data Analytics</p>
                     </div>
-                    <div class="d-flex flex-column p-2">
+                    <div class="text-white d-flex flex-column p-2 hiddenY">
                         <h5>Leeroy Creative Agency</h5>
                         <p>In 2021, I did an internship in Montréal in the Search Engine Marketing field</p>
                     </div>
-                    <div class="d-flex flex-column p-2">
+                    <div class="text-white d-flex flex-column p-2 hiddenY">
                         <h5>Freelance</h5>
                         <p>Since my 2nd year of studies, I'am working as a Creative Digital Freelance with 3 clients</p>
                     </div>
-                    <div class="d-flex flex-column p-2">
+                    <div class="text-white d-flex flex-column p-2 hiddenY">
                         <h5>Exchange Programm</h5>
                         <p>During my 3rd year of studies, I did an exchange in Vancouver </p>
                     </div>
-                </div>
-                <div class="d-flex justify-content gap-3">
-                    <button type="button" class="btn d-flex btn-light"><p>My Full Resume</p></button>
-                    <button type="button" class="btn d-flex btn-light"><p>Contact Me !</p></button>
-                </div>
+                    <div class="d-flex justify-content-center gap-3 hiddenY">
+                        <button type="button" class="btn d-flex btn-light"><p>My Full Resume</p></button>
+                        <button type="button" class="btn d-flex btn-light"><p>Contact Me !</p></button>
+                    </div>
             </div>
-            
+           
         </div>
-       <!-- <div class="row ">
-            <div class="col-sm-6 d-flex flex-column">
-                <div class="d-flex flex-column"><h3 class="display-6">My Experiences</h3></div>
-                <div class="grid d-flex gap-1 align-content-around flex-column experiencesColDiv">
-                    <div class="d-flex flex-column p-2">
-                        <h5>Pari Mutuel Urbain</h5>
-                        <p>During 2022 and 2023, I worked as a Digital Analyst in Paris</p>
-                    </div>
-                    <div class="d-flex flex-column p-2">
-                        <h5>Leeroy Creative Agency</h5>
-                        <p>In 2021, I did an internship in Montréal in the Search Engine Marketing field</p>
-                    </div>
-                    <div class="d-flex flex-column p-2">
-                        <h5>Freelance</h5>
-                        <p>Since my 2nd year of studies, I'am working as a Creative Digital Freelance with 3 clients</p>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center gap-3">
-                    <button type="button" class="btn d-flex btn-light"><p>My Full Resume</p></button>
-                    <button type="button" class="btn d-flex btn-light"><p>Contact Me !</p></button>
-                </div>
-            </div>
-            <div id="3D" class="col-sm-6">
-              
-            </div>
-        </div>-->
     </section>
     <!-- My Certificates -->
      <section>
         <div class="container">
             <div><h3 class="display-6">My Certificates</h3></div>
             <div class="certificatesContainerDiv row">
-                <div  class="col-md-3 col-6">
+                <div  class="col-md-3 col-6 hiddenZ">
                     <div class="d-flex flex-column certificatesColDiv">
                         <img class="img-fluid p-4" src="images/logo pulv.png" alt="">
                         <h5>Data Analytics Master</h5>
                         <p>AACSB Master - Data Analytics and Digital Marekting</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6 hiddenZ">
                     <div class="d-flex flex-column certificatesColDiv">
                         <img class="img-fluid p-4 certificatesColDivImg" src="images/google-ads-icon.svg" alt="">
                         <h5>Ads Search</h5>
                         <p>Certification delivered by Goolge Skill Shop</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6 hiddenZ">
                     <div class="d-flex flex-column  certificatesColDiv">
                         <img class="img-fluid p-4 certificatesColDivImg" src="images/google_analytics-icon.svg" alt="">
                         <h5>Google Analytics 4</h5>
                         <p>Certification delivered by Goolge Skill Shop</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6 hiddenZ">
                     <div class="d-flex flex-column certificatesColDiv">
                         <img class="img-fluid p-4 certificatesColDivImg" src="images/logo sql.png" alt="">
                         <h5>SQL Advanced</h5>
@@ -168,7 +141,7 @@
                     <figcaption class="figure-caption">Power Bi Project.</figcaption>
                   </div>
                   <div class="carousel-item">
-                    <img src="images/power bi.png" class="d-block w-100" alt="...">
+                    <img src="images/catalogue simple mockup (2).png" class="d-block w-100" alt="...">
                     <figcaption class="figure-caption">Content Creation's Portfolio.</figcaption>
                   </div>
                   <div class="carousel-item">
@@ -177,12 +150,12 @@
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span class="carousel-control-prev-icon" aria-hiddenY="true"></span>
+                  <span class="visually-hiddenY">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                  <span class="carousel-control-next-icon" aria-hiddenY="true"></span>
+                  <span class="visually-hiddenY">Next</span>
                 </button>
               </div>
         </div>
@@ -194,28 +167,28 @@
                 <h3 class="display-6">My technologies</h3>
             </div>
             <div class="row p-4 d-flex align-content-around">         
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/looker-studio-icon.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/Power_BI_Logo.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/tableau-software.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/Adobe_Photoshop_CC_icon.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/Adobe_Illustrator_CC_icon.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/Adobe_InDesign_CC_icon.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/looker-studio-icon.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/Power_BI_Logo.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/tableau-software.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/Adobe_Photoshop_CC_icon.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/Adobe_Illustrator_CC_icon.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/Adobe_InDesign_CC_icon.svg" alt=""></div>
             </div>
             <div class="row p-4 d-flex align-content-around">
-                <div class="col-md-2 d-flex col-4" ><img class="img-fluid technologiesDivDiv" src="images/HTML5_logo.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4" ><img class="img-fluid technologiesDivDiv" src="images/CSS3_logo_and_wordmark.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4" ><img class="img-fluid technologiesDivDiv" src="images/logo-javascript.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4" ><img class="img-fluid technologiesDivDiv" src="images/Bootstrap_logo.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4" ><img class="img-fluid technologiesDivDiv" src="images/shopify.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4" ><img class="img-fluid technologiesDivDiv" src="images/facebook-ads.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/HTML5_logo.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/CSS3_logo_and_wordmark.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/logo-javascript.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/Bootstrap_logo.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/shopify.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/facebook-ads.svg" alt=""></div>
             </div>
             <div class="row p-4 d-flex align-content-around">
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/python-logo-only.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/matplotlib-1.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/pandas.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/seaborn-1.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/logo sql.png" alt=""></div>
-                <div class="col-md-2 d-flex col-4"><img class="img-fluid technologiesDivDiv" src="images/google-bigquery-logo.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/python-logo-only.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/matplotlib-1.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/pandas.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/seaborn-1.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/logo sql.png" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/google-bigquery-logo.svg" alt=""></div>
             </div>
         </div>
     </section>
