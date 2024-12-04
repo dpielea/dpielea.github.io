@@ -1,43 +1,17 @@
 import * as THREE from 
             'https://cdn.jsdelivr.net/npm/three@v0.171.0/build/three.module.js';
 
-
-const waitForElementAndInitialize = () => {
-    const targetElement = document.getElementById("3D");
-    const sexyLady = document.getElementById("sexyContainer");
-
-    if (targetElement) {
-        // Element is found, initialize the scene
-        initializeScene(targetElement);
-    } else {
-        // Retry after a short delay
-        console.log("Waiting for target element...");
-        setTimeout(waitForElementAndInitialize, 100); // Check again in 100ms
-    }
-};
-
-const initializeScene = (targetElement) => {
-    /* // Create scene, camera, and renderer
-    const scene = new THREE.Scene();
-    const parentWidth = targetElement.clientWidth; // Get parent's width
-    const parentHeight = targetElement.clientHeight; // Get parent's height
-    const camera = new THREE.PerspectiveCamera(75, parentWidth / parentHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({antialias:true});
-
-    // Set renderer size to match parent dimensions
-    renderer.setSize(parentWidth, parentHeight);
-    renderer.setPixelRatio(devicePixelRatio)
-    targetElement.appendChild(renderer.domElement); // Attach renderer to the parent element */
-
-
-    const computedStyles = window.getComputedStyle(sexyContainer);
-    const parentWidth = parseFloat(computedStyles.width) || sexyContainer.clientWidth; // Use computed style width
-    const parentHeight = parseFloat(computedStyles.height) || sexyContainer.clientHeight; // Use computed style height
+    var targetElement = document.getElementById("3D");
+    var sexyLady = document.getElementById("sexyContainer");
+        
+    var computedStyles = window.getComputedStyle(sexyContainer);
+    var parentWidth = parseFloat(computedStyles.width) || sexyContainer.clientWidth; // Use computed style width
+    var parentHeight = parseFloat(computedStyles.height) || sexyContainer.clientHeight; // Use computed style height
 
     // Create scene, camera, and renderer
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, parentWidth / parentHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // Alpha to support transparency
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(75, parentWidth / parentHeight, 0.1, 1000);
+    var renderer = new THREE.WebGLRenderer({ antialias: true }); // Alpha to support transparency
 
     // Set renderer size and attach to the target element
     renderer.setSize(parentWidth, parentHeight);
@@ -72,10 +46,25 @@ const initializeScene = (targetElement) => {
     animate();
 
     console.log("Scene initialized!");
-};
 
+ 
 // Start the loop
-waitForElementAndInitialize();
-
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
         
+        if (entry.isIntersecting){
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show"); 
+
+            
+        }
+    });
+});
+
+const hiddenZ = document.querySelectorAll('.hiddenZ')
+hiddenZ.forEach((el)=>observer.observe(el)); 
+
+const hiddenY = document.querySelectorAll('.hiddenY')
+hiddenY.forEach((el)=>observer.observe(el)); 
    
