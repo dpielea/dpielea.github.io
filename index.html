@@ -13,39 +13,51 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <header>
-
+    <header class="fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand justify-content-end" href="#">Dimitri's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#sexyContainer">My Experiences</a>
+                <a class="nav-item nav-link" href="#Certificates">My Certificates</a>
+                <a class="nav-item nav-link" href="#Projects">My Projects</a>
+              </div>
+            </div>
+          </nav>
     </header>
     <!-- ME --> 
     <section class="container">
-        <div class="meDiv d-flex flex-column ">
+        <div class="maxwidth60 d-flex flex-column ">
             <h1 class="strong">Dimitri Pielea's Portfolio</h1>
             <h2 class="hiddenY display-6">Data Analytics & Digital Marketing</h2>
             <p class="hiddenY gap-5">With two years' experience in Web Data Analysis, graduate of a PGE master's degree in Data Analytics. International experience in Montreal, fluent in English, TOEFL level C1. Has experience in SQL with BigQuerry, trained on several Data Vizualization software: PowerBi, Tableau and Looker Studio. Comfortable with python and the pandas and matplotlib libraries.</p>
         </div>
     </section>
     <!-- My Skills --> 
-    <section  class="container">
-        <div class="skillsContainerDiv align-content-end row">
-            <div class="col-sm-6 hiddenZ">
-                <div>
+    <section  id="Skills" class="container">
+        <div class="align-content-end row">
+            <div class="col-sm-6">
+                <div class="hiddenZ">
                     <div><img class="meColIcon" src="images/analyse-des-donnees.png"></div>
                     <div><h5>Data Analysis</h5></div>
                     <div><p>I make analyis to help you make data driven decisions</p></div>
                 </div>
-                <div>
+                <div class="hiddenZ">
                     <div><img class="meColIcon" src="images/statistiques.png"></div>
                     <div><h5>Data Vizualisation</h5></div>
                     <div><p>I make analyis to help you make data driven decisions</p></div>
                 </div>
             </div>
-            <div class="col-sm-6 hiddenZ">
-                <div>
+            <div class="col-sm-6">
+                <div class="hiddenZ">
                     <div><img class="meColIcon" src="images/la-creativite.png"></div>
                     <div><h5>Graphic Design</h5></div>
                     <div><p>I make analyis to help you make data driven decisions</p></div>
                 </div>
-                <div>
+                <div class="hiddenZ">
                     <div><img class="meColIcon" src="images/telephone-intelligent.png"></div>
                     <div><h5>Digital Marketing</h5></div>
                     <div><p>I make analyis to help you make data driven decisions</p></div>
@@ -54,11 +66,11 @@
         </div>
     </section>
     <!-- My Experiences --> 
-    <section id="sexyContainer" class="row">
+    <section id="sexyContainer">
         <div id="3D" class="position-absolute col-12"></div>
-        <div class="container">
+        <div  class="container">
             <div class="col-8 d-flex flex-column position-relative">
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column m-3">
                     <h3 class="text-white display-6 hiddenY">My Experiences</h3>
                 </div>
                 <div class="grid d-flex gap-1 align-content-around flex-column">
@@ -86,52 +98,52 @@
                         <h5>Exchange Programm</h5>
                         <p>During my 3rd year of studies, I did an exchange in Vancouver </p>
                     </div>
-                    <div class="d-flex justify-content-center gap-3 hiddenY">
-                        <button type="button" class="btn d-flex btn-light"><p>My Full Resume</p></button>
-                        <button type="button" class="btn d-flex btn-light"><p>Contact Me !</p></button>
+                    <div class="d-flex justify-content-center gap-3 hiddenY mb-3">
+                        <button type="button" class="btn d-flex btn-light align-items-center"><span>My Full Resume</span></button>
+                        <button type="button" class="btn d-flex btn-light"><span>Contact Me !</span></button>
                     </div>
             </div>
            
         </div>
     </section>
     <!-- My Certificates -->
-     <section>
+     <section id="Certificates">
         <div class="container">
             <div><h3 class="display-6">My Certificates</h3></div>
             <div class="certificatesContainerDiv row">
                 <div  class="col-md-3 col-6 hiddenZ">
-                    <div class="d-flex flex-column certificatesColDiv">
+                    <div class="d-flex flex-column">
                         <img class="img-fluid p-4" src="images/logo pulv.png" alt="">
                         <h5>Data Analytics Master</h5>
                         <p>AACSB Master - Data Analytics and Digital Marekting</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-6 hiddenZ">
-                    <div class="d-flex flex-column certificatesColDiv">
-                        <img class="img-fluid p-4 certificatesColDivImg" src="images/google-ads-icon.svg" alt="">
+                <div class="col-md-3 col-6 hiddenZ"><a class="" target="_blank" href="https://skillshop.credential.net/351df942-68f0-49f4-95a4-4f3679b90df1?record_view=true">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid p-4" src="images/google-ads-icon.svg" alt="">
                         <h5>Ads Search</h5>
                         <p>Certification delivered by Goolge Skill Shop</p>
-                    </div>
+                    </div></a>
                 </div>
-                <div class="col-md-3 col-6 hiddenZ">
-                    <div class="d-flex flex-column  certificatesColDiv">
-                        <img class="img-fluid p-4 certificatesColDivImg" src="images/google_analytics-icon.svg" alt="">
+                <div class="col-md-3 col-6 hiddenZ"><a target="_blank" href="https://skillshop.credential.net/351df942-68f0-49f4-95a4-4f3679b90df1?record_view=true">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid p-4" src="images/google_analytics-icon.svg" alt="">
                         <h5>Google Analytics 4</h5>
                         <p>Certification delivered by Goolge Skill Shop</p>
-                    </div>
+                    </div></a>
                 </div>
-                <div class="col-md-3 col-6 hiddenZ">
-                    <div class="d-flex flex-column certificatesColDiv">
-                        <img class="img-fluid p-4 certificatesColDivImg" src="images/logo sql.png" alt="">
+                <div class="col-md-3 col-6 hiddenZ"><a target="_blank" href="https://www.hackerrank.com/certificates/117723f2dd3d">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid p-4" src="images/logo sql.png" alt="">
                         <h5>SQL Advanced</h5>
                         <p>Certified Advanced in SQL by the HackerRank test exam</p>
-                    </div>
+                    </div></a>
                 </div>
             </div>
         </div>
      </section>
      <!-- My Projects -->
-     <section>
+     <section id="Projects">
         <div class="container">
             <div><h3 class="display-6">My Projects</h3></div>
             <div id="carouselExample" class="carousel slide">
@@ -150,45 +162,45 @@
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hiddenY="true"></span>
-                  <span class="visually-hiddenY">Previous</span>
+                  <span class="bg-dark carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="bg-dark visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hiddenY="true"></span>
-                  <span class="visually-hiddenY">Next</span>
+                  <span class="bg-dark carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="bg-dark visually-hidden">Next</span>
                 </button>
               </div>
         </div>
      </section>
       <!-- My technologies -->
-    <section>
+    <section id="Technologies">
         <div class="container-sm">
             <div>
                 <h3 class="display-6">My technologies</h3>
             </div>
             <div class="row p-4 d-flex align-content-around">         
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/looker-studio-icon.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/Power_BI_Logo.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/tableau-software.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/Adobe_Photoshop_CC_icon.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/Adobe_Illustrator_CC_icon.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/Adobe_InDesign_CC_icon.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/looker-studio-icon.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/Power_BI_Logo.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/tableau-software.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/Adobe_Photoshop_CC_icon.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/Adobe_Illustrator_CC_icon.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/Adobe_InDesign_CC_icon.svg" alt=""></div>
             </div>
             <div class="row p-4 d-flex align-content-around">
-                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/HTML5_logo.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/CSS3_logo_and_wordmark.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/logo-javascript.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/Bootstrap_logo.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/shopify.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid technologiesDivDiv" src="images/facebook-ads.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid maxheight60 w-auto m-auto" src="images/HTML5_logo.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid maxheight60 w-auto m-auto" src="images/CSS3_logo_and_wordmark.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid maxheight60 w-auto m-auto" src="images/logo-javascript.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid maxheight60 w-auto m-auto" src="images/Bootstrap_logo.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid maxheight60 w-auto m-auto" src="images/shopify.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ" ><img class="img-fluid maxheight60 w-auto m-auto" src="images/cdnlogo.com_meta.svg" alt=""></div>
             </div>
             <div class="row p-4 d-flex align-content-around">
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/python-logo-only.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/matplotlib-1.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/pandas.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/seaborn-1.svg" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/logo sql.png" alt=""></div>
-                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid technologiesDivDiv" src="images/google-bigquery-logo.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/python-logo-only.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/matplotlib-1.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/pandas.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/seaborn-1.svg" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/logo sql.png" alt=""></div>
+                <div class="col-md-2 d-flex col-4 hiddenZ"><img class="img-fluid maxheight60 w-auto m-auto" src="images/google-bigquery-logo.svg" alt=""></div>
             </div>
         </div>
     </section>
