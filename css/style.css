@@ -27,6 +27,9 @@ p{ font-family: inter;
     font-style: regular;
     color: #828282;
 }
+a{
+    text-decoration: none;
+}
 
 /* me */
 
@@ -35,120 +38,80 @@ p{ font-family: inter;
     margin-bottom: 2%;
 }
 
-/* skills */
-
-.skillsContainerDiv{
-    margin: auto;
-    padding-left:5% ;
-    padding-right: 5%;
-}
-
-/* experiences */
-.experiencesGridDiv{
-    max-width: 10%;
-    padding: 1%;
-}
-.experiencesColImg{
-    margin:auto;
-}
-.experiencesColDiv{
-    margin:auto;
-}
-button{
-    color: #FFF;
-}
-
-/* certif */
-
-.certificatesContainerDiv{
-    margin: auto;
-}
-
-.certificatesColDiv{
+.maxheight100{
     max-height: 100%;
-    margin: auto;
 }
 
-@media (max-width: 768px){
-    .certificatesColDiv{
-        max-width: 100%;
-        margin: auto;
-    }
-  }
-
-.certificatesColDivImg{
-    max-height: 90%;
-    width: auto;
+.maxheight80{
+    max-height: 80%;
 }
 
-
+.maxheight60{
+    max-height: 60%;
+}
+.maxwidth60{
+    max-width: 60%;
+}
+.maxwidth90{
+    max-width: 90%;
+}
 @media (min-width: 992px){
-    .meDiv{
+    .maxwidth60{
         max-width: 60%;
     }
   }
 
  /* technologies */
 
-.technologiesDivDiv{
-margin: auto;
-width: auto;
-max-height: 60%;
-}
+
 
 .hiddenZ{
     opacity:0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 2s;
-    }
+}
 
 .hiddenZ:nth-child(2){
-transition-delay: 300ms;
+    transition-delay: 200ms;
 }  
 .hiddenZ:nth-child(3){
-    transition-delay: 500ms;
-    } 
+    transition-delay: 300ms;
+} 
 .hiddenZ:nth-child(4){
-  transition-delay: 700ms;
-        } 
+    transition-delay: 400ms;
+} 
 .hiddenZ:nth-child(5){
-            transition-delay: 900ms;
-            }  
-            
+    transition-delay: 500ms;
+}      
 .hiddenZ:nth-child(6){
-                transition-delay: 1100ms;
-                
-                } 
+    transition-delay: 600ms;
+} 
    
 .hiddenY{
 opacity:0;
 filter: blur(5px);
 transform: translateY(100%);
 transition: all 2s;
-
 }
 .hiddenY:nth-child(2){
-transition-delay: 300ms;
+    transition-delay: 200ms;
 }
-
 .hiddenY:nth-child(3){
-transition-delay: 500ms;
+    transition-delay: 300ms;
 }
-
 .hiddenY:nth-child(4){
-    transition-delay: 700ms;
-    }
-
-.hiddenY:nth-child(5){
-transition-delay: 900ms;
+    transition-delay: 400ms;
 }
-
+.hiddenY:nth-child(5){
+    transition-delay: 500ms;
+}
 .hiddenY:nth-child(6){
-    transition-delay: 1100ms;
-    }
-
-
+    transition-delay: 600ms;
+}
+.hiddenY:nth-child(7){
+     transition-delay: 700ms;
+}
 
 .show{
 opacity: 1;
