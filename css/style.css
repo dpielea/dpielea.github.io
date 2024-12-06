@@ -55,12 +55,11 @@ a{
 .maxwidth90{
     max-width: 90%;
 }
-@media (min-width: 992px){
+@media (max-width: 992px){
     .maxwidth60{
-        max-width: 60%;
+        max-width: 100%;
     }
   }
-
  /* technologies */
 
 
