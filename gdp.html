@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="module" defer src="js/script_gdp.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js"
+            }
+        }
+        </script>
     <meta charset="UTF-16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dimitri PIELEA - Graphic Design Portfolio</title>
@@ -10,9 +16,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+
 <header class="fixed-top bg-white">
     <nav class="container navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand justify-content-end" href="index.html">Dimitri's Portfolio</a>
@@ -28,6 +37,10 @@
         </div>
       </nav>
 </header> 
+
+<div class="container d-block">
+    <canvas id="bg" class="position-fixed col-12 mx-auto"></canvas>
+</div>
 
 <section class="container" id="Project titlte">
     <div class="d-flex flex-column">
@@ -85,7 +98,7 @@
             </div>
         </div>
         <div class="col-lg-8 d-inline-flex gap-3">
-            <div class="w-50 align-content-around">
+            <div class="w-50 align-content-top">
                 <img class="img-fluid" src="images/Driven_gris.jpg" alt="">
             </div>
             <div class="w-50">
@@ -139,10 +152,9 @@
     <div class="row m-0 p-0">
         <div class="m-0 p-0 d-inline mw-100 col-6" >
             <img  class="w-24" src="images/st 1.png" alt="">
-            <img  class="w-24 " src="images/st 2.png" alt="">
-            <img  class="w-24 " src="images/st 3.png" alt="">
-            <img  class="w-24 " src="images/st 4.png" alt="">
-    
+            <img  class="w-24" src="images/st 2.png" alt="">
+            <img  class="w-24" src="images/st 3.png" alt="">
+            <img  class="w-24" src="images/st 4.png" alt="">
         </div>
         <div class="m-0 p-0 d-inline mw-100 col-6" >
             <img  class="w-24" src="images/st 5.png" alt="">
@@ -183,10 +195,10 @@
             </div>
         </div>
         <div class="col-lg-8 d-inline-flex gap-3">
-            <div class=" w-25"><img class="img-fluid" src="images/sun_cobalt_02_01.jpg" alt=""></div>
-            <div class=" w-25"><img class="img-fluid" src="images/sun_studio-s_01_01.jpg" alt=""></div>
-            <div class=" w-25"><img class="img-fluid" src="images/sun_lubna_rose_ecaille.jpg" alt=""></div>
-            <div class=" w-25"><img class="img-fluid" src="images/sun_factory_03_01.jpg" alt=""></div>
+            <div class="w-25"><img class="img-fluid" src="images/sun_cobalt_02_01.jpg" alt=""></div>
+            <div class="w-25"><img class="img-fluid" src="images/sun_studio-s_01_01.jpg" alt=""></div>
+            <div class="w-25"><img class="img-fluid" src="images/sun_lubna_rose_ecaille.jpg" alt=""></div>
+            <div class="w-25"><img class="img-fluid" src="images/sun_factory_03_01.jpg" alt=""></div>
         </div>
     </div>
 </section>
@@ -246,31 +258,32 @@
                     <p>This was a work we had to do during my first years, the subjects was to recreate french expression with images with illustrator and photoshop. I decied to go with multiples designs. With pop-art, pixel art, and a bit of photshop and my drawing skills.                    </p>
                 </div>
             </div>
-            <div class="col-lg-6 ">
+            <div class="col-md-6 ">
                 <img class="img-fluid" src="images/Contre La Montre.png" alt="">
             </div>
-            <div class="col-lg-12 m-3">
-                <img class="img-fluid" src="images/eaudanssonvin.png" alt="">
+            <div class="col-md-12 ">
+                <img class="m-3 img-fluid" src="images/eaudanssonvin.png" alt="">
             </div>
-            <div class="col-lg-5 m-3">
-                <img class="img-fluid" src="images/Jeter l'eponge.png" alt="">
+            <div class="col-md-6">
+                <img class="m-3 img-fluid" src="images/Jeter l'eponge.png" alt="">
             </div><div class="col-lg-6 align-content-end">
-                <img class="img-fluid" src="images/PoserUnLapin.png" alt="">
+                <img class="m-3 img-fluid" src="images/PoserUnLapin.png" alt="">
             </div>
-            <div class="col-lg-5 m-3">
-                <img class="img-fluid" src="images/mettreunpanier.png" alt="">
+            <div class="col-md-6">
+                <img class="m-3 img-fluid" src="images/mettreunpanier.png" alt="">
             </div>
-            <div class="col-lg-5 m-3 align-content-end">
-                <img class="img-fluid" src="images/languedebois.png" alt="">
+            <div class="col-md-6 align-content-end">
+                <img class="m-3 img-fluid" src="images/languedebois.png" alt="">
             </div>
-            <div class="col-lg-5 m-3 align-content-start">
-                <img class="img-fluid" src="images/raconterdessalades.png" alt="">
+            <div class="col-md-6 align-content-start">
+                <img class="m-3 img-fluid" src="images/raconterdessalades.png" alt="">
             </div>
-            <div class="col-lg-5 m-3 align-content-end">
-                <img class="img-fluid" src="images/shooterdesbricks.png" alt="">
+            <div class="col-md-6 align-content-end">
+                <img class="m-3 img-fluid" src="images/shooterdesbricks.png" alt="">
             </div>
         </div>
     </section>
 </section>
 
+<script type="module" defer src="js/script_gdp.js"></script>
 </body>
