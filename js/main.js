@@ -30,10 +30,14 @@ import { getFresnelMat } from './getFresnelMat.js';
 
     const loader = new THREE.TextureLoader();
     const Spheregeometry = new THREE.IcosahedronGeometry(1,12);
-    const sphere = new THREE.Mesh( Spheregeometry, new THREE.MeshStandardMaterial( { 
+
+    const sphere = new THREE.MeshPhongMaterial({
+        bumpMap : loader.load('images/8081_earthbump4k.jpg'),
+        bumpScale : 3,
         map : loader.load('images/8081_earthmap4k.jpg')
-    } ) ); 
-    earthGroup.add( sphere );
+    });
+    const bmapMesh = new THREE.Mesh(Spheregeometry,sphere);
+    earthGroup.add( bmapMesh );
 
     const LightsMap = new THREE.MeshBasicMaterial({
         map : loader.load("images/8081_earthlights4k.jpg"),
@@ -88,15 +92,15 @@ import { getFresnelMat } from './getFresnelMat.js';
             particle.add(mesh);
         }
         
-    /* const spaceTexture = new THREE.TextureLoader().load('images/2k_stars_milky_way.jpg')
-    scene.background = spaceTexture */
+    const spaceTexture = new THREE.TextureLoader().load('images/2k_stars_milky_way.jpg')
+    scene.background = spaceTexture
 
     // Animation loop
     function animate() {
         requestAnimationFrame(animate);
-        sphere.rotation.y += 0.0006;
+        bmapMesh.rotation.y += 0.0006;
         lightMesh.rotation.y += 0.0006;
-        cloudMesh.rotation.y += 0.001;
+        cloudMesh.rotation.y += 0.0009;
         glowMesh.rotation.y += 0.0006;
         renderer.render(scene, camera);
         controls.update()
