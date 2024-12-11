@@ -31,12 +31,12 @@ import { getFresnelMat } from './getFresnelMat.js';
     const loader = new THREE.TextureLoader();
     const Spheregeometry = new THREE.IcosahedronGeometry(1,12);
     const sphere = new THREE.Mesh( Spheregeometry, new THREE.MeshStandardMaterial( { 
-        map : loader.load('images/earth/8081_earthmap4k.jpg')
+        map : loader.load('images/8081_earthmap4k.jpg')
     } ) ); 
     earthGroup.add( sphere );
 
     const LightsMap = new THREE.MeshBasicMaterial({
-        map : loader.load("images/earth/8081_earthlights4k.jpg"),
+        map : loader.load("images/8081_earthlights4k.jpg"),
         blending : THREE.AdditiveBlending,
         opacity : 0.5
     });
@@ -44,7 +44,7 @@ import { getFresnelMat } from './getFresnelMat.js';
     earthGroup.add( lightMesh );
 
     const cloudMat = new THREE.MeshStandardMaterial({
-        map : loader.load("images/earth/8081_earthhiresclouds4K.jpg"),
+        map : loader.load("images/8081_earthhiresclouds4K.jpg"),
         transparent : true,
         opacity : 0.5, 
         blending : THREE.AdditiveBlending,
