@@ -88,8 +88,8 @@ import { getFresnelMat } from './getFresnelMat.js';
             particle.add(mesh);
         }
         
-    const spaceTexture = new THREE.TextureLoader().load('images/2k_stars_milky_way.jpg')
-    scene.background = spaceTexture
+    /* const spaceTexture = new THREE.TextureLoader().load('images/2k_stars_milky_way.jpg')
+    scene.background = spaceTexture */
 
     // Animation loop
     function animate() {
