@@ -111,11 +111,11 @@ import { getFresnelMat } from './getFresnelMat.js';
 
     
 
-    window.addEventListener('resize', () => {
+    /* window.addEventListener('resize', () => {
         // Met à jour les dimensions de la caméra et du renderer
         camera.aspect = parentWidth / parentHeight;
         camera.updateProjectionMatrix();
         renderer.setSize(parentWidth, parentHeight);
-    });
+    }); */
 
     console.log("Scene initialized!");
