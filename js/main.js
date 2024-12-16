@@ -15,7 +15,10 @@ import { getFresnelMat } from './getFresnelMat.js';
     // Create scene, camera, and renderer
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(75, parentWidth / parentHeight, 0.1, 1000);
-    var renderer = new THREE.WebGLRenderer({ antialias: true }); // Alpha to support transparency
+    var renderer = new THREE.WebGLRenderer({ 
+        antialias: true, 
+        alpha : true 
+    }); // Alpha to support transparency
 
     // Set renderer size and attach to the target element
     renderer.setSize(parentWidth, parentHeight);
@@ -71,7 +74,7 @@ import { getFresnelMat } from './getFresnelMat.js';
     const gridHelper = new THREE.GridHelper(200,50)
     scene.add(gridHelper) */
     // Set camera position
-    camera.position.z = 2.4;
+    camera.position.z = 2.2;
     camera.position.x = -0.5;
     camera.position.y = 0.2;
 
@@ -92,8 +95,6 @@ import { getFresnelMat } from './getFresnelMat.js';
             particle.add(mesh);
         }
         
-    const spaceTexture = new THREE.TextureLoader().load('images/2k_stars_milky_way.jpg')
-    scene.background = spaceTexture
 
     // Animation loop
     function animate() {
