@@ -1,252 +1,271 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js"
-            }
-        }
-        </script>
+    <script
+        type="importmap">{"imports": {"three": "https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js"}}</script>
     <meta charset="UTF-16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dimitri PIELEA - Graphic Design Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-    
 
-<header class="fixed-top bg-white">
-    <nav class="container navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand justify-content-end" href="index.html">Dimitri's Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#sexyContainer">My Experiences</a>
-            <a class="nav-item nav-link" href="#Certificates">My Certificates</a>
-            <a class="nav-item nav-link" href="#Projects">My Projects</a>
-          </div>
-        </div>
-      </nav>
-</header> 
 
-<div class="container d-block">
-    <canvas id="bg" class="position-fixed col-12 mx-auto"></canvas>
-</div>
+    <header class="fixed-top bg-white">
+        <nav class="container navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand justify-content-end" href="index.html">Dimitri's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#sexyContainer">My Experiences</a>
+                    <a class="nav-item nav-link" href="#Certificates">My Certificates</a>
+                    <a class="nav-item nav-link" href="#Projects">My Projects</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<section class="container" id="Project titlte">
-    <div class="d-flex flex-column">
-        <h1 class="strong">Graphic Design Portfolio</h1>
-        <h2 class="display-6">i don't fucking know yet</h2>
+    <div class="container d-block">
+        <canvas id="bg" class="position-fixed col-12 mx-auto"></canvas>
     </div>
-    
-</section>
 
-<section id="Catalogue" class="container">
-    <div class="row ">
-        <div class="col-lg-4 align-content-around ">
-            <div class="d-inline-flex mb-3">
-                <img class="w-10 me-3" src="images/Adobe_InDesign_CC_icon.svg" alt="">
-                <h5 class="text-uppercase text-middle">Eyewear Catalogue</h5>
-            </div>
-            <div class="w-90">
-                <p>Designed and laid out a 183-page catalogue featuring over 100 models and more than 350 references. The catalogue is updated quarterly to reflect new collections and current trends.</p>
-            </div>
-        </div>
-        <div class="col-lg-8">
-            <img class="img-fluid" src="images/catalogue simple mockup (2).png" alt="">
-        </div>
-    </div>
-</section>
-
-<section id="Print" class="container">
-    <div class="row flex-row-reverse">
-        
-        <div class="col-lg-4 align-content-around">
-            <div class="d-inline-flex mb-3">
-                <img class="w-10 me-3" src="images/Adobe_Illustrator_CC_icon.svg" alt="">
-                <h5 class="text-uppercase text-middle">A4 Print</h5>
-            </div>
-            <div class="w-90">
-                <p>Produced multiple creative assets for social media campaigns using only website photos. Developed fresh, engaging content ideas to maximize brand presence and interaction across various social platforms.</p>
-            </div>
-        </div>
-        <div class="col-lg-8">
-            <img class="img-fluid" src="images/resultats exports.png" alt="">
+    <section class="container" id="Project titlte">
+        <div class="d-flex flex-column">
+            <h1 class="strong">Graphic Design Portfolio</h1>
+            <h2 class="display-6"></h2>
         </div>
 
-    </div>
-</section>
+    </section>
 
-<section id="Instagram" class="container">
-    <div class="row ">
-        <div class="col-lg-4 align-content-around ">
-            <div class="d-inline-flex mb-3">
-                <img class="w-10 me-3" src="images/Adobe_Photoshop_CC_icon.svg" alt="">
-                <h5 class="text-uppercase text-middle ">Instagram Posts</h5>
+    <section id="Catalogue" class="container">
+        <div class="row ">
+            <div class="col-lg-4 align-content-around ">
+                <div class="d-inline-flex mb-3">
+                    <img class="w-10 me-3" src="images/Adobe_InDesign_CC_icon.svg" alt="">
+                    <h5 class="text-uppercase text-middle">Eyewear Catalogue</h5>
+                </div>
+                <div class="w-90">
+                    <p>Designed and laid out a 183-page catalogue featuring over 100 models and more than 350
+                        references. The catalogue is updated quarterly to reflect new collections and current trends.
+                    </p>
+                </div>
             </div>
-            <div class="w-90">
-                <p>Produced multiple creative assets for social media campaigns using only website photos. Developed fresh, engaging content ideas to maximize brand presence and interaction across various social platforms.</p>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/catalogue simple mockup.png" alt="">
             </div>
         </div>
-        <div class="col-lg-8 d-inline-flex gap-3">
-            <div class="w-50 align-content-top">
-                <img class="img-fluid" src="images/Driven_gris.jpg" alt="">
+    </section>
+
+    <section id="Print" class="container">
+        <div class="row flex-row-reverse">
+
+            <div class="col-lg-4 align-content-around">
+                <div class="d-inline-flex mb-3">
+                    <img class="w-10 me-3" src="images/Adobe_Illustrator_CC_icon.svg" alt="">
+                    <h5 class="text-uppercase text-middle">A4 Print</h5>
+                </div>
+                <div class="w-90">
+                    <p>Produced multiple creative assets for social media campaigns using only website photos. Developed
+                        fresh, engaging content ideas to maximize brand presence and interaction across various social
+                        platforms.</p>
+                </div>
             </div>
-            <div class="w-50">
-                <div class="align-content-around mb-3"><img class="img-fluid" src="images/Driven_gris2.jpg" alt=""></div>
-                <div class="w-25 d-inline-flex">
-                    <img class="p-1 img-fluid" src="images/Driven_marron.jpg" alt="">
-                    <img class="p-1 img-fluid" src="images/Driven_marron2.jpg" alt="">
-                    <img class="p-1 img-fluid" src="images/Armada.jpg" alt="">
-                    <img class="p-1 img-fluid" src="images/Armada2.jpg" alt="">
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/resultats exports.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Instagram" class="container">
+        <div class="row ">
+            <div class="col-lg-4 align-content-around ">
+                <div class="d-inline-flex mb-3">
+                    <img class="w-10 me-3" src="images/Adobe_Photoshop_CC_icon.svg" alt="">
+                    <h5 class="text-uppercase text-middle ">Instagram Posts</h5>
+                </div>
+                <div class="w-90">
+                    <p>Produced multiple creative assets for social media campaigns using only website photos. Developed
+                        fresh, engaging content ideas to maximize brand presence and interaction across various social
+                        platforms.</p>
+                </div>
+            </div>
+            <div class="col-lg-8 d-inline-flex gap-3">
+                <div class="w-50 align-content-top">
+                    <img class="img-fluid" src="images/Driven_gris.jpg" alt="">
+                </div>
+                <div class="w-50">
+                    <div class="align-content-around mb-3"><img class="img-fluid" src="images/Driven_gris2.jpg" alt="">
+                    </div>
+                    <div class="w-25 d-inline-flex">
+                        <img class="p-1 img-fluid" src="images/Driven_marron.jpg" alt="">
+                        <img class="p-1 img-fluid" src="images/Driven_marron2.jpg" alt="">
+                        <img class="p-1 img-fluid" src="images/Armada.jpg" alt="">
+                        <img class="p-1 img-fluid" src="images/Armada2.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="Kakemono" class="container">
-    <div class="row flex-row-reverse">
-        <div class="col-lg-4 align-content-around ">
+    <section id="Kakemono" class="container">
+        <div class="row flex-row-reverse">
+            <div class="col-lg-4 align-content-around ">
+                <div class="d-inline-flex">
+                    <img class="w-10 me-3" src="images/Adobe_Photoshop_CC_icon.svg" alt="">
+                    <h5 class="text-uppercase text-middle ">Kakemono</h5>
+                </div>
+                <div class="w-90">
+                    <p>Restored and retrieved high-quality colors from a black and white photo to design a 60x84.85cm
+                        kakemono for conventions. Ensured a high DPI resolution for clear, professional print quality.
+                        The final design showcased vibrant, accurate colors, optimized for large-scale presentation.</p>
+                </div>
+            </div>
+            <div class="col-lg-8 d-inline-flex gap-1">
+                <div class="w-50 align-content-around">
+                    <img class="img-fluid" src="images/2N5A1378 copie.jpg" alt="">
+                </div>
+                <div class="w-50">
+                    <div class="align-content-around">
+                        <img class="img-fluid" src="images/Simple_Mido_104x150h_UHD4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Storytelling" class="">
+        <div class="flex-column container">
             <div class="d-inline-flex">
-                <img class="w-10 me-3" src="images/Adobe_Photoshop_CC_icon.svg" alt="">
-                <h5 class="text-uppercase text-middle ">Kakemono</h5>
+                <img class="w-10 me-3" src="images/Adobe_Premiere_Pro_CC_icon.svg" alt="">
+                <h5 class="text-uppercase text-middle ">STORYTELLING VIDEOS</h5>
             </div>
             <div class="w-90">
-                <p>Restored and retrieved high-quality colors from a black and white photo to design a 60x84.85cm kakemono for conventions. Ensured a high DPI resolution for clear, professional print quality. The final design showcased vibrant, accurate colors, optimized for large-scale presentation.</p>
+                <p>Created an Instagram Story video from scratch to promote and conceptualize an eyewear brand. Designed
+                    visually engaging content that aligned with the brand’s identity and aimed at increasing brand
+                    awareness. </p>
             </div>
         </div>
-        <div class="col-lg-8 d-inline-flex gap-1">
-            <div class="w-50 align-content-around">
-                <img class="img-fluid" src="images/2N5A1378 copie.jpg" alt="">
+        <div class="row w-100">
+            <div class="col-12 m-1">
+                <img class="w-12" src="images/st 1.png" alt="">
+                <img class="w-12" src="images/st 2.png" alt="">
+                <img class="w-12" src="images/st 3.png" alt="">
+                <img class="w-12" src="images/st 4.png" alt="">
+                <img class="w-12" src="images/st 5.png" alt="">
+                <img class="w-12" src="images/st 6.png" alt="">
+                <img class="w-12" src="images/st 7.png" alt="">
+                <img class="w-12" src="images/st 8.png" alt="">
             </div>
-            <div class="w-50">
-                <div class="align-content-around">
-                    <img class="img-fluid" src="images/Simple_Mido_104x150h_UHD4.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="Logo" class="container">
+        <div class="row flex-row-reverse">
+
+            <div class="col-lg-6 align-content-around">
+                <div class="d-inline-flex mb-3">
+                    <img class="w-10 me-3" src="images/Adobe_Illustrator_CC_icon.svg" alt="">
+                    <h5 class="text-uppercase text-middle">Copy Right logo</h5>
+                </div>
+                <div class="w-90">
+                    <p>To secure copyright protection and trademark registration in France, I designed and added a
+                        unique icon to the branded name. This ensured the brand's distinct identity and compliance with
+                        legal standards for trademark protection.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/logo-simple 2022 gris-clair-9E9E9E.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="Stories" class="container">
+        <div class="row ">
+            <div class="col-lg-4 align-content-around ">
+                <div class="d-inline-flex mb-3">
+                    <img class="w-10 me-3" src="images/Adobe_InDesign_CC_icon.svg" alt="">
+                    <h5 class="text-uppercase text-middle">Product Stories</h5>
+                </div>
+                <div class="w-90">
+                    <p>Developed an efficient template to quickly create and publish new glasses models or references.
+                        The format streamlined the process, ensuring consistent branding while reducing production time
+                        for catalogs and promotional materials.</p>
+                </div>
+            </div>
+            <div class="col-lg-8 d-inline-flex gap-3">
+                <div class="w-25"><img class="img-fluid" src="images/sun_cobalt_02_01.jpg" alt=""></div>
+                <div class="w-25"><img class="img-fluid" src="images/sun_studio-s_01_01.jpg" alt=""></div>
+                <div class="w-25"><img class="img-fluid" src="images/sun_lubna_rose_ecaille.jpg" alt=""></div>
+                <div class="w-25"><img class="img-fluid" src="images/sun_factory_03_01.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="NBA" class="container">
+        <div class="row flex-row-reverse ">
+            <div class="col-lg-6 align-content-around gap-3">
+                <div class="d-inline-flex mb-3">
+                    <img class="w-10 me-3" src="images/Adobe_Illustrator_CC_icon.svg" alt="">
+                    <h5 class="text-uppercase text-middle">NBA Team Logo</h5>
+                </div>
+                <div class="w-90">
+                    <p>For a school project aimed at learning the basics of Illustrator, I designed a logo for a
+                        fictional NBA team based in Las Vegas. The project involved exploring color theory, typography,
+                        and vector design to create a professional and dynamic logo that reflects the city's vibrant
+                        energy and sports culture.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/LAA v7.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="Brand" class="container">
+        <div class="row flex-row">
+            <div class="col-lg-5 align-content-around gap-3">
+                <div class="d-inline-flex mb-3">
+                    <img class="w-10 me-3" src="images/Adobe_Illustrator_CC_icon.svg" alt="">
+                    <h5 class="text-uppercase text-middle">Sport's Brand</h5>
+                </div>
+                <div class="w-90 ">
+                    <p>As a personal basketball enthusiast, I conceptualized a brand that draws inspiration from the
+                        principles of NBA team logos to design a unique t-shirt. This project involved creating a
+                        striking logo and graphics that resonate with basketball culture, utilizing bold colors and
+                        impactful typography to appeal to fellow fans.</p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="d-inline-flex position-relative">
+                    <img class="img-fluid w-90 top-0 start-50" src="images/mockup_tshirt_miami.jpg" alt="">
+                    <img class="position-absolute w-40 top-50 start-50" src="images/mockup_portée blanc.jpg" alt="">
+                </div>
+                <div class="d-inline-flex gap-3">
+                    <img class="img-fluid w-20" src="images/logo_melo_bulls.png" alt="">
+                    <img class="img-fluid w-20" src="images/logo_melo_la.png" alt="">
+                    <img class="img-fluid w-20" src="images/Logo_melo_miami_MIN 4 Pink.png" alt="">
+                    <img class="img-fluid w-20" src="images/logo_melo_thevalley.png" alt="">
                 </div>
             </div>
         </div>
-        
-    </div>
-</section>
+    </section>
 
-<section id="Storytelling" class="">
-    <div class="flex-column container">
-        <div class="d-inline-flex">
-            <img class="w-10 me-3" src="images/Adobe_Premiere_Pro_CC_icon.svg" alt="">
-            <h5 class="text-uppercase text-middle ">STORYTELLING VIDEOS</h5>
-        </div>
-        <div class="w-90">
-            <p>Created an Instagram Story video from scratch to promote and conceptualize an eyewear brand. Designed visually engaging content that aligned with the brand’s identity and aimed at increasing brand awareness. </p>
-        </div>
-    </div>
-    <div class="row m-0 p-0">
-        <div class="m-0 p-0 d-inline mw-100 col-6" >
-            <img  class="w-24" src="images/st 1.png" alt="">
-            <img  class="w-24" src="images/st 2.png" alt="">
-            <img  class="w-24" src="images/st 3.png" alt="">
-            <img  class="w-24" src="images/st 4.png" alt="">
-        </div>
-        <div class="m-0 p-0 d-inline mw-100 col-6" >
-            <img  class="w-24" src="images/st 5.png" alt="">
-            <img  class="w-24" src="images/st 6.png" alt="">
-            <img  class="w-24" src="images/st 7.png" alt="">
-            <img  class="w-24" src="images/st 8.png" alt="">
-        </div>
-    </div>
-</section>
-
-<section id="Logo" class="container">
-    <div class="row flex-row-reverse">
-        
-        <div class="col-lg-6 align-content-around">
-            <div class="d-inline-flex mb-3">
-                <img class="w-10 me-3" src="images/Adobe_Illustrator_CC_icon.svg" alt="">
-                <h5 class="text-uppercase text-middle">Copy Right logo</h5>
-            </div>
-            <div class="w-90">
-                <p>To secure copyright protection and trademark registration in France, I designed and added a unique icon to the branded name. This ensured the brand's distinct identity and compliance with legal standards for trademark protection.</p>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <img class="img-fluid" src="images/logo-simple 2022 gris-clair-9E9E9E.png" alt="">
-        </div>
-    </div>
-</section>
-
-<section id="Stories" class="container">
-    <div class="row ">
-        <div class="col-lg-4 align-content-around ">
-            <div class="d-inline-flex mb-3">
-                <img class="w-10 me-3" src="images/Adobe_InDesign_CC_icon.svg" alt="">
-                <h5 class="text-uppercase text-middle">Product Stories</h5>
-            </div>
-            <div class="w-90">
-                <p>Developed an efficient template to quickly create and publish new glasses models or references. The format streamlined the process, ensuring consistent branding while reducing production time for catalogs and promotional materials.</p>
-            </div>
-        </div>
-        <div class="col-lg-8 d-inline-flex gap-3">
-            <div class="w-25"><img class="img-fluid" src="images/sun_cobalt_02_01.jpg" alt=""></div>
-            <div class="w-25"><img class="img-fluid" src="images/sun_studio-s_01_01.jpg" alt=""></div>
-            <div class="w-25"><img class="img-fluid" src="images/sun_lubna_rose_ecaille.jpg" alt=""></div>
-            <div class="w-25"><img class="img-fluid" src="images/sun_factory_03_01.jpg" alt=""></div>
-        </div>
-    </div>
-</section>
-
-<section id="NBA" class="container">
-    <div class="row flex-row-reverse ">
-        <div class="col-lg-6 align-content-around gap-3">
-            <div class="d-inline-flex mb-3">
-                <img class="w-10 me-3" src="images/Adobe_Illustrator_CC_icon.svg" alt="">
-                <h5 class="text-uppercase text-middle">NBA Team Logo</h5>
-            </div>
-            <div class="w-90">
-                <p>For a school project aimed at learning the basics of Illustrator, I designed a logo for a fictional NBA team based in Las Vegas. The project involved exploring color theory, typography, and vector design to create a professional and dynamic logo that reflects the city's vibrant energy and sports culture.</p>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <img class="img-fluid" src="images/LAA v7.png" alt="">
-        </div>
-    </div>
-</section>
-
-<section id="Brand" class="container">
-    <div class="row flex-row">
-        <div class="col-lg-5 align-content-around gap-3">
-            <div class="d-inline-flex mb-3">
-                <img class="w-10 me-3" src="images/Adobe_Illustrator_CC_icon.svg" alt="">
-                <h5 class="text-uppercase text-middle">Sport's Brand</h5>
-            </div>
-            <div class="w-90 ">
-                <p>As a personal basketball enthusiast, I conceptualized a brand that draws inspiration from the principles of NBA team logos to design a unique t-shirt. This project involved creating a striking logo and graphics that resonate with basketball culture, utilizing bold colors and impactful typography to appeal to fellow fans.</p>
-            </div>
-        </div>
-        <div class="col-lg-7">
-            <div class="d-inline-flex position-relative">
-                <img class="img-fluid w-90 top-0 start-50" src="images/mockup_tshirt_miami.jpg" alt="">
-                <img class="position-absolute w-40 top-50 start-50" src="images/mockup_portée blanc.jpg" alt="">
-            </div>
-            <div class="d-inline-flex gap-3">
-                <img class="img-fluid w-20" src="images/logo_melo_bulls.png" alt="">
-                <img class="img-fluid w-20" src="images/logo_melo_la.png" alt="">
-                <img class="img-fluid w-20" src="images/Logo_melo_miami_MIN 4 Pink.png" alt="">
-                <img class="img-fluid w-20" src="images/logo_melo_thevalley.png" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="Projet" class="container">
+    <section id="Projet" class="container">
         <div class="row flex-row">
             <div class="col-lg-6 align-content-around">
                 <div class="d-inline-flex mb-3">
@@ -254,35 +273,38 @@
                     <h5 class="text-uppercase text-middle">School Project</h5>
                 </div>
                 <div class="w-90">
-                    <p>This was a work we had to do during my first years, the subjects was to recreate french expression with images with illustrator and photoshop. I decied to go with multiples designs. With pop-art, pixel art, and a bit of photshop and my drawing skills.                    </p>
+                    <p>This was a work we had to do during my first years, the subjects was to recreate french
+                        expression with images with illustrator and photoshop. I decied to go with multiples designs.
+                        With pop-art, pixel art, and a bit of photshop and my drawing skills. </p>
                 </div>
             </div>
             <div class="col-md-6 ">
                 <img class="img-fluid" src="images/Contre La Montre.png" alt="">
             </div>
             <div class="col-md-12 ">
-                <img class="m-3 img-fluid" src="images/eaudanssonvin.png" alt="">
+                <img class="p-3 img-fluid" src="images/eaudanssonvin.png" alt="">
             </div>
             <div class="col-md-6">
-                <img class="m-3 img-fluid" src="images/Jeter l'eponge.png" alt="">
-            </div><div class="col-lg-6 align-content-end">
-                <img class="m-3 img-fluid" src="images/PoserUnLapin.png" alt="">
+                <img class="p-3 img-fluid" src="images/Jeter l'eponge.png" alt="">
+            </div>
+            <div class="col-lg-6 align-content-end">
+                <img class="p-3 img-fluid" src="images/PoserUnLapin.png" alt="">
             </div>
             <div class="col-md-6">
-                <img class="m-3 img-fluid" src="images/mettreunpanier.png" alt="">
+                <img class="p-3 img-fluid" src="images/mettreunpanier.png" alt="">
             </div>
             <div class="col-md-6 align-content-end">
-                <img class="m-3 img-fluid" src="images/languedebois.png" alt="">
+                <img class="p-3 img-fluid" src="images/languedebois.png" alt="">
             </div>
             <div class="col-md-6 align-content-start">
-                <img class="m-3 img-fluid" src="images/raconterdessalades.png" alt="">
+                <img class="p-3 img-fluid" src="images/raconterdessalades.png" alt="">
             </div>
             <div class="col-md-6 align-content-end">
-                <img class="m-3 img-fluid" src="images/shooterdesbricks.png" alt="">
+                <img class="p-3 img-fluid" src="images/shooterdesbricks.png" alt="">
             </div>
         </div>
     </section>
-</section>
+    </section>
 
-<!-- <script type="module" defer src="js/script_gdp.js"></script> -->
+    <!-- <script type="module" defer src="js/script_gdp.js"></script> -->
 </body>
