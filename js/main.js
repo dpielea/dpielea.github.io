@@ -1,5 +1,3 @@
-//import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js';
-//import { OrbitControls } from 'three-orbitcontrols'
 import * as THREE from 'three';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/controls/OrbitControls.js';
 import { getFresnelMat } from './getFresnelMat.js';
@@ -17,7 +15,7 @@ import { getFresnelMat } from './getFresnelMat.js';
     var camera = new THREE.PerspectiveCamera(75, parentWidth / parentHeight, 0.1, 1000);
     var renderer = new THREE.WebGLRenderer({ 
         antialias: true, 
-        alpha : true 
+        alpha : false 
     }); // Alpha to support transparency
 
     // Set renderer size and attach to the target element
@@ -74,11 +72,10 @@ import { getFresnelMat } from './getFresnelMat.js';
     const gridHelper = new THREE.GridHelper(200,50)
     scene.add(gridHelper) */
     // Set camera position
-    camera.position.z = 2.2;
-    camera.position.x = -0.5;
-    camera.position.y = 0.2;
+    camera.position.set(0,0,2)
+    camera.lookAt(-0.75,0,0)
 
-    const controls = new OrbitControls(camera, renderer.domElement);
+    /* const controls = new OrbitControls(camera, renderer.domElement); */
  
         var particle = new THREE.Object3D();
         scene.add(particle);
@@ -104,7 +101,7 @@ import { getFresnelMat } from './getFresnelMat.js';
         cloudMesh.rotation.y += 0.0009;
         glowMesh.rotation.y += 0.0006;
         renderer.render(scene, camera);
-        controls.update()
+        /* controls.update() */
         particle.rotation.x += 0.0002;
         particle.rotation.y -= 0.0002;
     }
