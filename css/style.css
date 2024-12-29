@@ -4,36 +4,59 @@
     height: 100vh;
     z-index: -1
   }
-  
+
   section{
       margin-bottom:10%;
       margin-top:20%;
    }
+
+
   
-  
-  h1{
+ #override h1{
       font-family: inter;
       font-style: Bold;
+      color: #1F1A40;
   }
-  h2{
+  #override   h2{
       font-family: inter;
+      color: #1F1A40;
   
   }
-  h3{
+  #override  h3{
       font-family: inter;
       font-style: semi-bold;
       padding-bottom: 2%;
+      color: #1F1A40;
   }
-  h4{
+  #override  h4{
       font-family: inter;
       font-style: medium;
-  
+      color: #1F1A40;
   }
-  p{ font-family: inter;
-      font-style: regular;
-      color: #828282;
+  #override  h5{
+    font-family: inter;
+    font-style: medium;
+    color: #1F1A40;
+}
+
+  #override  p{ 
+    font-family: inter;
+    font-style: regular;
+    color: #4B4958;
   }
   
+  #override button{
+    background-color: #2D2855;
+  }
+  #override a{
+    text-decoration: none;
+
+}
+#sexyContainer p{color: white;}
+#sexyContainer h3{color: white;}
+#sexyContainer h5{color: white;}
+
+
   /* me */
   
   .meColIcon{
@@ -65,6 +88,12 @@
   .maxwidth60{
       max-width: 60%;
   }
+  .maxwidth70{
+    max-width: 70%;
+}
+  .maxwidth90{
+    max-width: 90%;
+}
   .mw-60{
       max-width: 60%;
   }
